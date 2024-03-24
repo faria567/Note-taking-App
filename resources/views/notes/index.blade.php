@@ -62,6 +62,8 @@
                                     <th scope="col">Title</th>
                                     <th scope="col">Description</th>                                 
                                     <th scope="col">Action</th>
+                                    <th scope="col">creation date</th>
+                                    <th scope="col">last modified date</th>
                                 </tr>
                             </thead>
 
@@ -72,6 +74,8 @@
                                       <td >{{$note->title}}</td>
 
                                       <td >{{$note->content}}</td>
+                                      <td >{{$note->created_at}}</td>
+                                      <td >{{$note->updated_at	}}</td>
                                           <td>
                                               <form action="{{route('note.destroy',$note->id)}}"  method="Post">
                                              
